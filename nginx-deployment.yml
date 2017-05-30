@@ -3,14 +3,14 @@ kind: Deployment
 metadata:
     name: mywebapp-deployment
 spec:
-    replicas: 3
-    template:
-        metadata:
-            labels:
-                k8s-app: myweb-app-v1
-        spec:
-            containers:
-                - name: myweb-app-v1
-                  image: cloudnautique/nginx-web-tier:v1
-                  ports:
-                      - containerPort: 80
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        k8s-app: myweb-app-v1
+    spec:
+      containers:
+        - name: myweb-app-v1
+          image: tutum/hello-world
+          ports:
+            - containerPort: 80
