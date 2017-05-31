@@ -8,6 +8,6 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: <IP_OF_NFS_SERVER>
+    server: 172.31.31.118
     # Exported path of your NFS server
-    path: "/nfs"
+    path: "/var/nfs"
